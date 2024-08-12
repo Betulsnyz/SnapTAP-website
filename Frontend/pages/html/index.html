@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Page</title>
+    <link rel="stylesheet" href="/Frontend/assets/css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Secular+One&family=Comfortaa:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="top-row">
+                <div class="logo">SnapTAP</div>
+                <div class="nav">
+                    <a href="/Frontend/pages/html/about.html">About</a>
+                    <a href="#">Sign Up</a>
+                    <button class="login-button">Login</button>
+                </div>
+            </div>
+            <div class="bottom-row">
+                <div class="upload-message">UPLOAD A PISTACHIO IMAGE AND LET US GUESS THE CATEGORY!</div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="left-item">
+                <p class="upload-text">Upload a picture !!</p>
+                <div class="imageuploadrec" id="imageUploadArea">
+                    <img src="/Frontend/assets/img/image 6.png" alt="Upload Icon" id="uploadIcon">
+                    <img src="" alt="Uploaded Image" id="uploadImagePreview" style="display:none;">
+                    <input type="file" id="imageInput" name="file" accept="image/*" style="display:none;">
+                </div>
+
+            </div>
+            <div class="center-item">
+                <img src="/Frontend/assets/img/request 1.png" alt="Request Image" class="request-image"
+                    id="requestImage">
+            </div>
+            <div class="right-item">
+                <div class="text-box">
+                    <p id="dynamic-text">Which type of pistachio is this?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-content-container">
+            <div class="sub-content-text-container">
+                <img src="/Frontend/assets/img/Rectangle 8.png" alt="Sub Content Background" class="sub-content-image">
+                <div class="sub-content-text">
+                    <img src="/Frontend/assets/img/image 7.png" alt="Icon" class="sub-content-icon">
+                    <!-- Icon Image Eklendi -->
+                    <h2>About This Site</h2>
+                    <p>
+                        This site allows image classification into two categories using a specially trained VGG16 model.
+                        Upload an image and let us determine its category. Our model provides high accuracy results and
+                        features
+                        a user-friendly interface.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="feedback">
+                    <img src="/Frontend/assets/img/image 2.png" alt="Feedback Icon" class="feedback-icon">
+                    <a href="#" class="feedback-text">send feedback</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <p class="copyright">&copy; 2024 SnapTAP. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="/Frontend/services/api.js"></script>
+</body>
+
+</html>

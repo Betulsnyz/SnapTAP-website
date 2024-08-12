@@ -1,0 +1,334 @@
+body {
+    background-color: #08435C;
+    color: #FFFCFC;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    padding: 10px 20px;
+    overflow: hidden; /* İçerik taşmasını önler */
+    
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/background2.png') no-repeat center center/cover;
+    mix-blend-mode: multiply;
+    z-index: 1;
+    
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Gölge bulanıklığı */
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+}
+
+nav a {
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-btn {
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: #78BDEF; /* Buton arka plan rengi */
+    padding: 5px 15px;
+    border-radius: 5px; /* Buton köşelerinin yuvarlatılması */
+    border-radius: 5px;
+    display: inline-block; /* Blok seviyesinde görünüm */
+}
+
+.login-btn:hover {
+    background-color: #1C86EE; /* Hover durumu için daha koyu bir mavi */
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center; /* İçeriği yatay olarak ortalar */
+
+}
+
+.profile-img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.bubble-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px; /* Maksimum genişliği belirlemek için */
+}
+
+.speech-bubble-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bubble-text-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bubble-text {
+    color: #08435C;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+
+
+.education-section {
+    background-color: #08435C;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.education-content {
+    background-color: #5D2F2F;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-card {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-info {
+    text-align: center;
+    padding-bottom: 40px; /* Logoya yer açmak için alt boşluk */
+}
+
+.education-info h2 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.education-info p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.programming-languages {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.programming-languages h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.language-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.language-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.contact-footer {
+    background-color: #08435C;
+    padding: 30px 20px;
+    color: #FFFCFC;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-content h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #FFFCFC;
+    padding-bottom: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.contact-item a {
+    color: #FFFCFC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #78BDEF;
+}
+
+.contact-item span {
+    color: #FFFCFC;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    /* Header kısmı */
+    header h1 {
+        font-size: 28px; /* Başlık font boyutu küçültüldü */
+    }
+    nav a {
+        font-size: 18px; /* Navigasyon bağlantıların font boyutu küçültüldü */
+    }
+
+    /* Düzen ayarları */
+    .container, .profile-section, .education-content {
+        flex-direction: column; /* Yatay düzenden dikey düzene geçiş */
+        align-items: center; /* İçerikleri ortalamak için */
+    }
+
+    /* Profil resim ve balon düzeni */
+    /* Profil resim ve balon düzeni */
+    .profile-section {
+        flex-direction: row; /* Yatay düzene geçiş */
+        align-items: flex-start; /* İçerikleri üstten hizala */
+        justify-content: center; /* İçerikleri ortalar */
+        padding: 20px 0; /* Dikey boşluk ekle */
+    }
+
+    .profile-img {
+        width: 150px; /* Mobil için daha küçük genişlik */
+        height: 150px; /* Sabit yükseklik */
+        margin-right: 10px; /* Sağ marj ekle */
+        margin-bottom: 0; /* Alt marj kaldırıldı */
+    }
+
+    .bubble-container {
+        max-width: 200px; /* Maksimum genişlik belirlenir */
+        flex-grow: 1; /* Kalan alanı kaplamasına izin ver */
+    }
+
+    .bubble-text-container {
+        justify-content: flex-end; /* Metni ortalar */
+        padding-right: 0; /* Sağda boşluk kaldırıldı */
+    }
+
+    .bubble-text {
+        text-align: center; /* Metni ortalar */
+        width: 80%; /* Tam genişlik */
+        padding: 10px; /* İç boşluklar */
+        line-height: 1.2; /* Satır yüksekliği */
+        overflow-wrap: break-word; /* Uzun kelimelerin taşmasını önler */
+        word-wrap: break-word; /* Uzun kelimelerin taşmasını önler */
+        word-break: break-word; /* Kelime kesme kurallarını uygular */
+        font-size: 10px; /* Metin boyutu küçültüldü */
+
+    }
+
+    /* Eğitim ve programlama dilleri kartları */
+    .education-card, .programming-languages {
+        margin-right: 0; /* Sağ marj kaldırıldı */
+        margin-bottom: 20px; /* Alt marj eklendi */
+    }
+
+    /* Programlama dili ikonları düzeni */
+    .language-icons {
+        flex-direction: column; /* İkonlar dikey hizalanır */
+        align-items: center; /* İkonları ortalar */
+    }
+
+    /* Footer düzeni */
+    .footer-content {
+        padding: 0 20px; /* İçeriklere yatay padding eklendi */
+    }
+    .contact-item {
+        flex-direction: column; /* İletişim maddeleri dikey hizalanır */
+        align-items: flex-start; /* Metinlerin başlangıç hizası */
+    }
+    .contact-item a, .contact-item span {
+        margin-left: 45px; /* İkonların genişliği kadar boşluk bırak */
+        margin-top: 5px; /* Üstten biraz boşluk bırak */
+    }
+}
+

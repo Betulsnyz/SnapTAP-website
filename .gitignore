@@ -1,0 +1,15 @@
+# Sanal ortam
+.venv/
+
+# PyCache dosyaları
+__pycache__/
+*.pyc
+
+# Model dosyaları (isteğe bağlı)
+*.h5
+
+# VS Code konfigürasyon dosyaları
+.vscode/
+
+# Diğer geçici veya büyük dosyalar
+test_data.npz
